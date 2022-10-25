@@ -1,0 +1,21 @@
+body{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.photo{
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+
+  }
+  
+  .grid-container > div{
+    float: left;
+    font-size: 20px;
+    text-align: center;
+  }

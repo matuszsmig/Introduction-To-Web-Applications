@@ -1,0 +1,55 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 66% 66% 32% 32% 32% 32%;
+}
+
+.grid-container > div {
+    margin: 5px;
+    background-color: rgba(252, 150, 90, 0.8);
+    border: 2px solid rgba(252, 100, 12, 0.8);
+    text-align: left;
+    color: rgb(252, 100, 12, 0.8);
+    font-size: 20px;
+    border-radius: 5px;
+    
+  }
+
+.jeden{
+    height: 100px;
+}
+
+.dwa{
+    position:relative;
+    height: 200px;
+    right: 50%;
+    display: grid;
+    grid-template-columns: 67%;
+}
+
+.trzy{
+    position:relative;
+    right: 412.5%;
+    top: 27%;
+    height: 470px;
+}
+
+.cztery{
+    height: 170px;
+    position:relative;
+    right: 303%;
+    top: 47%;
+}
+
+.piec{
+    height: 170px;
+    position:relative;
+    right: 509%;
+    top: 89%;
+}
+
+.szesc{
+    height: 170px;
+    position:relative;
+    top: 89%;
+    right: 503%;
+}

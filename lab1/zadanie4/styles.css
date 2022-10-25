@@ -1,0 +1,43 @@
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    color: #79efff00;
+}
+
+.jeden{
+    background-color: #ff0000;
+    width: 120px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.dwa{
+    background-color: #79efff;
+    width: 280px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+
+}
+
+.trzy{
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background-color: #fdff6b;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    width: 424px;
+}

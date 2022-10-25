@@ -1,0 +1,84 @@
+p:nth-child(1) {
+    background-color: rgb(226, 88, 116);
+    font-size: 50%;
+  }
+
+  p:nth-child(2) {
+    background-image: url("https://www.willakamila.pl/media/k2/items/cache/077ab55046ce80eaf9a3ddea999597ca_XL.jpg");
+    font-size: 16px;
+    height: 560px;
+    border: 200px;
+    
+  }
+
+  p:nth-child(3) {
+    margin-top: 300px;
+    background-position: 13%;
+    background-color: bisque;
+    font-style:italic;
+    color: aqua;
+    height: 200px;
+    width: 200px;
+    overflow:visible;
+    padding-bottom: 200px;
+  }
+
+  p:nth-child(4) {
+    background-position-y: top;
+  }
+
+ #firsttable{
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+  }
+
+#trfirsttable{
+    height: 55px;
+}
+
+#secondtable{
+    background-color: rgb(0, 0, 0);
+    width: 720px;
+  }
+
+  #Trsecondtable{
+    height: 55px;
+  }
+
+  #nigeria{
+    float: left;
+  }
+
+  #albania{
+    float: right;
+  }
+
+  .dwa{
+     position: relative;
+     top: 195px;
+  }
+
+  .trzy{
+    position: relative;
+    bottom: 195px;
+ }
+
+ #europa{
+  position: relative;
+  left: 50%;
+  background-color: blue;
+  float: left;
+  width: 50%;
+  text-align: center;
+
+ }
+
+ #azja{
+  position: relative;
+  right: 50%;
+  background-color: red;
+  float: right;
+  width: 50%;
+  text-align: center;
+  
+}
