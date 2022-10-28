@@ -1,0 +1,14 @@
+.main-ver{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header{
+    border: 2px solid black;
+    padding: 2%;
+}
+
+.Logo{
+    border: 2px solid black;
+    
+}

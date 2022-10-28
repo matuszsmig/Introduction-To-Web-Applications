@@ -33,8 +33,6 @@
     color: white;
     padding-right: 250px;
     width: 500px;
-    animation-duration: 2s;
-    animation-name: slidein;
 }
 
 .like-button{
@@ -67,6 +65,7 @@
     height: 400px;
     animation-duration: 2s;
     animation-name: slidein2;
+    margin-right: 5%;
 
 }
 
@@ -146,21 +145,25 @@
     box-shadow: 0px 0px 23px 0px rgba(66, 68, 90, 1);
 }
 
+.roll-left{
+  animation-duration: 2s;
+  animation-name: slidein;
+}
 
   
   @keyframes slidein {
     from {
-      margin-left: 2000px;
+      margin-left: -300%;
     }
   
     to {
-      margin-left: 0%;
+      margin-right: 0%;
     }
   }
 
   @keyframes slidein2{
     from {
-        margin-right: 2000px;
+        margin-right: -300%;
       }
     
       to {
