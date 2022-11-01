@@ -1,0 +1,81 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-container > div {
+    margin: 2%;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 7px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 7px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 7px 24px 0px rgba(66, 68, 90, 1);
+    width: 250px;
+    height: 400px;
+}
+
+img {
+    border-radius: 5px 5px 0px 0px;
+    max-width: 100%;
+    margin: 0px;
+    float: left;
+    margin-bottom: 15px;
+  } 
+
+h4,h2{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+p{
+    color: rgb(169, 169, 169);
+    border-bottom: 1px solid rgb(169, 169, 169);
+    padding-bottom: 20px;
+}
+
+.content{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.read-article{
+    float: left;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(255, 72, 0);
+    padding: 10px;
+    padding-right: 10px;
+    width: 65px;
+    border-radius: 5px;
+}
+
+.read-article:hover{
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 6px -1px rgba(66, 68, 90, 1);
+}
+
+.rates{
+    float: right;
+}
+
+#forum, #like{
+    font-size: 14px;
+}
+
+.com,.like{
+    font-size: 14px;
+    color: rgb(169, 169, 169);
+}

@@ -1,0 +1,155 @@
+img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+body, html{
+    background-color: rgb(118, 196, 255);
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+div{
+    padding: 0.5%;
+}
+
+.menu-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(86, 182, 255);
+    width: 100%;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.logo{
+    padding-top: 10px;
+    color: white;
+    margin-left: 10%;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.main-menu{
+    vertical-align:auto;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-bottom: 0px;
+
+}
+
+.element{
+    margin-right: 20px;
+}
+
+.menu-of-menu{
+    padding-left: 5px;
+    margin-right: 10px;
+    width: 89px;
+    max-height: 100%;
+}
+
+.menu-of-menu:hover{
+    position: relative;
+    display: inline-block;
+}
+
+#Menu{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+.buttons{
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    vertical-align: middle;
+}
+
+.login{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    padding-inline: 15px;
+    color: white;
+}
+
+.sign-up{
+    margin-left: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    padding-inline: 15px;
+    background-color: white;
+    color: rgb(86, 182, 255);
+}
+
+.login:hover{
+    background-color: white;
+    color: rgb(86, 182, 255);
+}
+
+.sign-up:hover{
+    background-color: rgb(86, 182, 255);
+    color: rgb(255, 255, 255);
+} 
+
+.dropdown{
+    height: 40px;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 44px;
+    background-color: #ffffff;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(73, 176, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  #point{
+    -webkit-transform:  rotate(180deg);
+    -moz-transform:  rotate(180deg);
+    -ms-transform:  rotate(180deg);
+    -o-transform:  rotate(180deg);
+    transform:  rotate(180deg);
+    font-size: 60px;
+    position: absolute;
+    top: -34px;
+    color: rgb(255, 255, 255);
+  }
