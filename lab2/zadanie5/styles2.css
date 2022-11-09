@@ -1,0 +1,87 @@
+body,html{
+    width: 100%;
+}
+
+p{
+    margin: 0px;
+    margin-left: 6px;
+    font-size: 20px;
+    float: right;
+}
+
+.box{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.blue{
+    width: 250px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(0, 110, 255);
+    transition-property: width;
+    transition-duration: 1s;
+
+}
+
+.blue:hover{
+    background-color: rgb(164, 237, 255);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.blue:hover span{
+    border: 2px solid rgb(255, 255, 255);;
+}
+
+.icon{
+    float: left;
+    border: 2px solid rgb(0, 110, 255); 
+    border-radius: 20% 20% 20% 20%;
+}
+
+.round{
+    border: 1px solid;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 42% 42% 42% 42%;
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.to-remove{
+    transition-property: font-size;
+    transition-duration: 1s;
+  }
+
+  @media only screen and (max-width: 700px){
+    .box {
+        width: 100px;
+      }
+      .blue{
+        width: 80px;
+      }
+    
+      .to-remove{
+        font-size: 0px;
+      }
+
+}

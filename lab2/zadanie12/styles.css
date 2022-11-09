@@ -1,0 +1,563 @@
+body,html{
+    width: 99%;
+    height: 99%;
+}
+
+body{
+    background-color: rgb(216, 216, 216);
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+    .fa{
+        text-align: center;
+        color: rgb(0, 81, 255);
+        border: 2px solid white;
+        background-color: white;
+        padding: 1.5%;
+        border-radius: 50px;
+        position: absolute;
+        bottom: 89%;
+        left: 50%;
+    }
+
+    .div1{
+        margin-top: 30px;
+        left: 20%;
+        top: 5%;
+        position: absolute;
+        width: 50%;
+        height: 80%;
+        background-color: rgb(0, 81, 255);
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.267) 0%, rgba(41, 53, 86, 0) 100%);
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+
+    .div2{
+        margin-top: 30px;
+        position: relative;
+        background-color: white;
+        width: 70%;
+        height: 90%;
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+
+    #nike {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        right: 20%;
+        top: 50px;
+        font-size: 10vw;
+        opacity: 0.2;
+        color: white;
+        font-weight: bold;
+
+    }
+
+    .div1 .but{
+        position: absolute;
+        max-height: 90%;
+        max-width: 90%;
+        right: 40%;
+        bottom: 0%;
+        rotate: -15deg;
+    }
+
+    .div1 .logo{
+        max-width: 14%;
+        max-height: 14%;
+        position: absolute;
+        bottom: 89%;
+        left: 3%;
+
+    }
+
+
+    .flex-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-left: 12.5%;
+    }
+
+    .new{
+        height: 50%;
+        padding: 5px;
+        padding-inline: 10px;
+        background-color: rgb(0, 81, 255);
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 10px;
+        right: 60%;
+        font-size: 1.5vw;
+
+    }
+
+    .nike-zoom{
+        display: inline-block;
+        right: 10%;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        font-size: 2.5vw;
+    }
+
+    .line-one {
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .nike-zoom { grid-area: 1 / 1 / 2 / 2; }
+        .new { grid-area: 1 / 2 / 2 / 3; }
+
+    #running-shoes{
+        padding-bottom: 5%;
+        width: 80%;
+        color: gray;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(192, 192, 192);
+    }
+
+    #product-info{
+        padding-top: 5%;
+        color: gray;
+        font-weight: bold;
+    }
+
+    #text{
+        padding-right: 20%;
+        color: rgb(168, 168, 168);
+    }
+
+    #color{
+        color: gray;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    #colors input[type='radio']:after {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    #colors input[type='radio']:checked:after {
+        width: 10px;
+        height: 10px;
+        border-radius: 15px;
+        top: 0px;
+        left: -1px;
+        position: relative;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    #colors input[id="blue"]:after{
+        background-color: rgb(0, 81, 255);
+    }
+
+    #colors input[id="red"]:after{
+        background-color: rgb(255, 58, 58);
+    }
+
+    #colors input[id="green"]:after{
+        background-color: rgb(89, 211, 78);
+    }
+
+    #colors input[id="orange"]:after{
+        background-color: rgb(255, 91, 27);
+    }
+
+    #colors input[id="black"]:after{
+        background-color: rgb(54, 54, 54);
+    }
+
+    #colors{
+        width: 80%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(192, 192, 192);
+    }
+
+    #Size{
+        width: 50%;
+        padding-top: 10px;
+        color: gray;
+        font-weight: bold;
+        font-size: 2vw;
+        padding-bottom: 10px;
+        
+    }
+
+
+    #sizes input[type='radio']:after {
+        cursor: pointer;
+        color: gray;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        text-align: center;
+        position: relative;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid gray;
+        border-radius: 5px;
+        display: block;
+        background-color: white;
+        font-size: 18px;
+    }
+
+    #sizes {
+        position: relative;
+        right: 20px;
+    }
+
+    #sizes input{
+        margin-left: 20px;
+    }
+
+    #sizes input[type='radio']:checked:after {
+        color: white;
+        background-color: rgb(0, 81, 255);
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #sizes input[id="8"]:after{
+        content: '8';
+    }
+
+    #sizes input[id="9"]:after{
+        content: '9';
+    }
+
+    #sizes input[id="10"]:after{
+        content: '10';
+    }
+
+    #sizes input[id="11"]:after{
+        content: '11';
+    }
+
+    #sizes input[id="12"]:after{
+        content: '12';
+    }
+
+    .end {
+        top: 50px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .card { grid-area: 1 / 1 / 2 / 2; }
+        .price { grid-area: 1 / 2 / 2 / 3; }
+
+        .card{
+            padding: 10px;
+            padding-inline: 15px;
+            color: white;
+            background-color: rgb(0, 81, 255);
+        }
+
+        .price{
+            margin-top: 5%;
+            margin-left: 30%;
+            position: relative;
+            font-size: 2vw;
+            color: rgb(41, 41, 41);
+        }
+
+    .parent:has(input[id='blue']:checked)
+    .card{
+        background-color: rgb(0, 81, 255);
+    }
+
+    .parent:has(input[id='blue']:checked)
+    .div1{
+        background-color: rgb(0, 81, 255);
+    }
+
+    .parent:has(input[id='blue']:checked)
+    .new{
+        background-color: rgb(0, 81, 255);
+    }
+
+    .parent:has(input[id='blue']:checked)
+    #sizes input[type='radio']:checked:after{
+        background-color: rgb(0, 81, 255);
+    }
+
+    .parent:has(input[id='blue']:checked)
+    .fa{
+        color: rgb(0, 81, 255);
+    }
+
+    .parent:has(input[id='blue']:checked)
+    .but{
+
+        filter: hue-rotate(deg);
+    }
+
+
+
+    .parent:has(input[id='red']:checked)
+    .card{
+        background-color: rgb(255, 58, 58);
+    }
+
+    .parent:has(input[id='red']:checked)
+    #sizes input[type='radio']:checked:after{
+        background-color: rgb(255, 58, 58);
+    }
+
+    .parent:has(input[id='red']:checked)
+    .new{
+        background-color: rgb(255, 58, 58);
+    }
+
+    .parent:has(input[id='red']:checked)
+    .div1{
+        background-color: rgb(255, 58, 58);
+    }
+
+    .parent:has(input[id='red']:checked)
+    .fa{
+        color: rgb(255, 58, 58);
+    }
+
+    .parent:has(input[id='red']:checked)
+    .but{
+
+        filter: hue-rotate(120deg);
+    }
+
+    
+    
+    .parent:has(input[id='green']:checked)
+    .card{
+        background-color: rgb(89, 211, 78);
+    }
+
+    .parent:has(input[id='green']:checked)
+    .div1{
+        background-color: rgb(89, 211, 78);
+    }
+
+    .parent:has(input[id='green']:checked)
+    #sizes input[type='radio']:checked:after{
+        background-color: rgb(89, 211, 78);
+    }
+
+    .parent:has(input[id='green']:checked)
+    .new{
+        background-color: rgb(89, 211, 78);
+    }
+
+    .parent:has(input[id='green']:checked)
+    .fa{
+        color: rgb(89, 211, 78);
+    }
+
+    .parent:has(input[id='green']:checked)
+    .but{
+
+        filter: hue-rotate(270deg);
+    }
+
+
+
+    .parent:has(input[id='orange']:checked)
+    .card{
+        background-color: rgb(255, 91, 27);
+    }
+
+    .parent:has(input[id='orange']:checked)
+    .div1{
+        background-color: rgb(255, 91, 27);
+    }
+
+    .parent:has(input[id='orange']:checked)
+    #sizes input[type='radio']:checked:after{
+        background-color: rgb(255, 91, 27);
+    }
+
+    .parent:has(input[id='orange']:checked)
+    .new{
+        background-color: rgb(255, 91, 27);
+    }
+
+    .parent:has(input[id='orange']:checked)
+    .fa{
+        color: rgb(255, 91, 27);
+    }
+
+    .parent:has(input[id='orange']:checked)
+    .but{
+
+        filter: hue-rotate(150deg);
+    }
+
+
+
+
+
+    .parent:has(input[id='black']:checked)
+    .card{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .parent:has(input[id='black']:checked)
+    .div1{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .parent:has(input[id='black']:checked)
+    #sizes input[type='radio']:checked:after{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .parent:has(input[id='black']:checked)
+    .new{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .parent:has(input[id='black']:checked)
+    .fa{
+        color: rgb(54, 54, 54);
+    }
+
+    .parent:has(input[id='black']:checked)
+    .but{
+
+        filter: grayscale(100%);
+    }
+
+
+    @media (max-width: 735px) {
+
+
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin-bottom: 50px;
+            }
+            
+            .div1 { grid-area: 1 / 1 / 2 / 2; }
+            .div2 { grid-area: 2 / 1 / 3 / 2; }
+
+        .div1{
+            position: block;
+            bottom: 80px;
+            width: 70%;
+            height: 400px;
+            
+    
+        }
+
+        .div2{
+            position: relative;
+            margin-inline: auto;
+            height: 450px;
+            width: 75%;
+            top: 50%;
+        }
+
+        .div1 .but{
+            position: absolute;
+            max-height: 90%;
+            max-width: 95%;
+            right: 7.5%;
+            bottom: 25%;
+            rotate: 0deg;
+        }
+
+        .line-one{
+            height: 50px;
+        }
+
+
+        .new{
+            font-size: 20px;
+        }
+
+        .nike-zoom{
+            position: relative;
+            font-size: 4vw;
+            float: left;
+
+        }
+
+        .price{
+            font-size: 25px;
+            position: relative;
+            float: right;
+            top: 0%;
+        }
+
+        #nike{
+            font-size: 25vw;
+            left: 0%;
+        }
+
+        .div1 .logo{
+            max-width: 20%;
+            max-height: 14%;
+            position: absolute;
+            bottom: 87.5%;
+            left: 10%;
+    
+        }
+
+        .fa{
+            text-align: center;
+            padding: 2%;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 87.5%;
+            left: 85%;
+        }
+        
+    }

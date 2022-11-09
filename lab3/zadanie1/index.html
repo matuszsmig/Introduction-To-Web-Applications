@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let osoba = document.getElementById("czesc")
+
+
+        function powitanie (){
+            let nazwa = prompt("Prosze podac imie");
+            let dlugosc = nazwa.length
+            let ostLitera = nazwa[dlugosc-1]
+            if (ostLitera === 'a') {
+                czesc.innerHTML = "Witaj Pani: " + nazwa
+            }
+            else{
+                czesc.innerHTML = "Witam Pana: " + nazwa
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="powitanie()">
+        Witaj!
+    </button>
+    <div id="czesc"></div>
+    
+</body>
+</html>

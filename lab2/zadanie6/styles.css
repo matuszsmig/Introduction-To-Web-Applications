@@ -1,0 +1,182 @@
+body{
+    background-image: url("bg.jpg");
+    
+}
+
+.flex-box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    color: rgb(74, 183, 255);
+
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 2%;
+    float: left;
+}
+
+.main-menu{
+    font-size: 18px;
+    width: 430px;
+    margin-right: 2%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    transition-property: width, font-size;
+    transition-duration: 0.5s;
+}
+
+  li{
+    font-size: 0px;
+  }
+
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 10%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button, .menu-button::before, .menu-button::after {
+    display: block;
+    background-color: rgb(66, 201, 255);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 700px) {
+
+
+    .main-menu{
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .menu-button-container {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 40px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body:has(input[type="checkbox"]:checked){
+        background-image: none;
+        background-color: rgb(255, 193, 227);
+    }
+
+    body:has(input[type="checkbox"]:checked) .flex-box-container .logo{
+        font-size: 0px;
+    }
+
+    body:has(input[type="checkbox"]:checked) .menu-button-container .menu-button::after{
+        background-color: rgb(255, 53, 164);
+    }
+
+    body:has(input[type="checkbox"]:checked) .menu-button-container .menu-button::before{
+        background-color: rgb(255, 53, 164);
+    }
+
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: 80px;
+      padding: 0.5em;
+      color: rgb(255, 53, 164);
+      padding-top: 15px;
+    }
+
+    #menu-toggle:checked ~ .menu #first {
+        height: 80px;
+        padding: 0.5em;
+        padding-top: 100%;
+        color: rgb(255, 53, 164);
+        padding-top: 15px;
+      }
+
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      font-size: 20px;
+      color: rgba(240, 249, 255, 0);
+      background-color: rgb(255, 193, 227);
+    }
+
+
+  
+  }

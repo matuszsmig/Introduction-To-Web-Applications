@@ -1,0 +1,96 @@
+body,html{
+  background-color: rgb(247, 255, 132);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu{
+  color: white;
+  width: 40%;
+  height: 100%;
+  background-color: palevioletred;
+  margin-left: 20%;
+  margin-top: 2%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+
+}
+
+
+.menu > div{
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+
+.menu p{
+  padding-left: 20px;
+}
+
+
+
+
+input, div.submenu {
+  display: none;
+}
+
+label {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+p{
+  position: relative;
+  top: 20px;
+}
+
+input:checked~div.submenu {
+  width: 100%;
+  height: 70%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  position:absolute;
+  background-color: #3700ff;
+}
+
+.submenu > div{
+  padding-left: 10%;
+  width: 90%;
+  height: 25%;
+}
+
+ .submenu div:hover {
+  clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%);
+  background: linear-gradient(180deg,#3700ff 50%, #9273ff 50%);
+}
+
+.koniec{
+  position: relative;
+  bottom: 20px;
+}
+
+.submenu:has(div:hover){
+  background-color: yellow;
+}
+
+.submenu p{
+  position: relative;
+  top: -10px;
+}
+
