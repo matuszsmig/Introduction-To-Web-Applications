@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body style="font-family: 'PT Sans', sans-serif; font-size: 14px;">
+    <div id="tło">
+        <div id="header">
+            <p id="slash">/</p>
+            <p id="emp">Nasi pracownicy</p>
+        </div>
+        <button onclick="leftClick()" id="left"><</button>
+        <button onclick="rightClick()" id="right">></button>
+        <div id="content1">
+            <div class="inline">
+                <img  onclick="randomize()" src="ad.jpg">
+            </div>
+            <div class="name">Alphonso Davies</div>
+            <div class="position">Sales manager</div>
+            <div class="desc">Vivamus eu nisl elit. Aliquam tellus turpis, cursus eu quam a, maximus pulvinar orci. Nulla et ex mi. Maecenas venenatis arcu id nunc commodo tempor.</div>
+        </div>
+        <div id="content2">
+            <div class="inline">
+                <img  onclick="randomize()" src="gp.jpg">
+            </div>
+            <div class="name">Gerard Pique</div>
+            <div class="position">President</div>
+            <div class="desc">Suspendisse suscipit tellus turpis, malesuada fringilla ligula cursus sed. Integer quis risus metus. Vivamus quis pellentesque lorem. Donec id lorem dictum, ullamcorper erat ac, euismod sapien.</div>
+        </div>
+        <div id="content3">
+            <div class="inline">
+                <img  onclick="randomize()" src="hms.jpg">
+            </div>
+            <div class="name">Heung-min Son</div>
+            <div class="position">IT manager</div>
+            <div class="desc">Cras pellentesque egestas nisl. Nunc imperdiet massa ut libero sagittis tempor. Quisque tristique diam vitae tortor rhoncus imperdiet. Nulla lobortis egestas nulla in elementum.</div>
+        </div>
+        <div id="content4">
+            <div class="inline">
+                <img onclick="randomize()" src="cz.jpg">
+            </div>
+            <div class="name">Czesław Michniewicz</div>
+            <div class="position">Product manager</div>
+            <div class="desc">Aliquam mi eros, euismod vel magna sed, accumsan tristique urna. Vestibulum leo mi, iaculis in egestas at, efficitur quis tortor. Maecenas et accumsan enim. Etiam aliquam sem n.</div>
+        </div>
+        <div id="random">"</div>
+    </div>
+    
+</body>
+</html>

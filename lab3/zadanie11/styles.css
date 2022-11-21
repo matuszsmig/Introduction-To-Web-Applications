@@ -1,0 +1,94 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 3px solid rgb(153, 153, 153);
+}
+
+#header > div{
+    position: relative;
+    left: 37.5%;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+section{
+    width: 100%;
+}
+
+
+.list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.one { grid-area: 1 / 1 / 2 / 2; }
+.two { grid-area: 1 / 2 / 2 / 3; }
+.three { grid-area: 1 / 3 / 2 / 4; }
+.four { grid-area: 1 / 4 / 2 / 5; }
+
+.list > div{
+    position: relative;
+    left: 37.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.list2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    font-size: 16px;
+}
+
+.list2 > div{
+    position: relative;
+    left: 37.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#buttons > button{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    padding-inline: 30px;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 5px;
+}

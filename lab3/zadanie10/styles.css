@@ -1,0 +1,35 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#container{
+    width: 60%;
+    height: 500px;
+    background-color: rgb(214, 214, 214);
+    border: 5px solid gray;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+#circle{
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 83, 83);
+    border-radius: 50%;
+    border: 5px solid red;
+    transform: translate3d(50px, 50px, 0);
+    transition: transform 0.5s ease-in;
+
+}
+
+#warning{
+    color: red;
+    position: absolute;
+    display: none;
+}

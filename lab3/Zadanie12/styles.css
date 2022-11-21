@@ -1,0 +1,141 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    user-select: none;
+  }
+
+#backImg{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+#zombies{
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 100%;
+
+}
+
+
+.zombie {
+    position: absolute;
+    bottom: -40px;
+    width: 200px;
+    height: 312px;
+    background: url("images/walkingdead.png") 0px 0px;
+  }
+
+  #login, #lose{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    width: 40%;
+    height: 300px;
+    background-color: rgb(0, 38, 255);
+    border: 2px solid rgb(0, 0, 150);
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+  }
+
+#lose{
+    display: none;
+}
+
+
+#login > div{
+    margin-bottom: 20px;
+}
+
+#nickName{
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 150);
+    background-color: purple;
+}
+
+#space{
+    margin-bottom: 30px;
+}
+
+#play, #again{
+    font-size: 40px;
+    padding: 15px;
+    padding-inline: 50px;
+    border-radius: 25%;
+    background-color: purple;
+}
+
+#play:hover, #again:hover{
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+#container{
+    width: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+}
+
+#livesRest{
+    color: white;
+    font-size: 40px;
+}
+
+#mainScore{
+    color: white;
+    font-size: 40px;
+
+}
+
+#nick{
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+
+#cursor1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    top: -150%;
+  }
+  
+  #cursor2 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    pointer-events: none;
+  }
