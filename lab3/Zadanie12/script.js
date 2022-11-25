@@ -119,15 +119,18 @@ function checkNick(){
         /[a-z]/,
         /[A-Z]/,
         /[0-9]/,
-        /.{1}/
+        /.{8}/,
+        /.{16}/
     ];
 
     let small = tabRegexs[0];
     let big = tabRegexs[1];
     let numeric = tabRegexs[2];
     let len = tabRegexs[3];
+    let maxLen = tabRegexs[4];
 
-    if (len.test(nickName) && (big.test(nickName) || numeric.test(nickName) || small.test(nickName))){
+    if (len.test(nickName) && !maxLen.test(maxLen) &&
+    (big.test(nickName) || numeric.test(nickName)|| small.test(nickName))){
         return true
     } else {
         alert("Incorrect Nickname");
