@@ -1,0 +1,11 @@
+<div class="cart">
+    <div class="close" (click)="closedCart()"></div>
+    <div>
+        <div *ngFor="let Trip of share.options; index as i">
+            <p *ngIf="Trip.peopleLeft > 0">
+                {{Trip.peopleLeft}}x {{Trip.title}}
+            </p>
+        </div>
+        <h1>{{fullSum | currency : 'USD' : 'symbol-narrow'}}</h1>
+    </div>
+</div>

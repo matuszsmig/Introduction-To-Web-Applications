@@ -1,0 +1,35 @@
+.main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 3px 7px 0px rgba(66, 68, 90, 1);
+    }
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.content > div{
+    width: 27.5%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.small{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small p{
+    padding: 20px;
+}

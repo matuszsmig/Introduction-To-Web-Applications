@@ -1,0 +1,46 @@
+<div id = "motherDiv">
+    <div class="footer">
+        <div class="forms" (click)="showMyForms()">Dodaj wycieczkę</div>
+        <div class="reservedRightNow"
+        [ngClass]="{'lessThan10': counter < 10, 'moreThan10': counter >= 10}"
+        > Masz zarezerwowane: {{counter}} wycieczek</div>
+        <div (click)="showMyCart()" class="cart">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+        <app-cart *ngIf="showCart" [share]="jsonData" (closeCart)="closeMyCart($event)"></app-cart>
+    </div>
+    
+    <div class="oneTrip" *ngFor="let item of jsonData.options; index as i" 
+    [ngStyle]="{'background-color': item.amount - item.peopleLeft == 0 ? 'rgb(255, 93, 93)': item.amount - item.peopleLeft <= 5 ? 'rgb(255, 199, 95)': 'white'}"
+    [ngClass]="{'cheapOne': item.price==getTheCheapest(), 'expensiveOne': item.price==getTheMostExpensive()}">
+        <img src={{item.image}}>
+
+        <span class="material-symbols-outlined toDelete" (click)="deleteThis(i, item)">
+            delete
+        </span>
+
+        <h2>{{item.title | uppercase}}</h2>
+        <h4>{{item.country | uppercase}}</h4>
+        <h4>{{item.begins}}</h4>
+        <h4>{{item.ends}}</h4>
+        <p (click)="getTheCheapest()">{{item.description}}</p>
+        <app-stars></app-stars>
+
+        <div id="bottom">
+            <div id="price">
+                {{item.price | currency : 'USD' : 'symbol-narrow'}}
+            </div>
+            
+            <div id="communicate"> </div>
+            <div id="amountLeft">
+                <div id="plus" (click)="addPerson(item)" *ngIf="item.amount - item.peopleLeft !=0">+</div>
+                <div>{{item.amount - item.peopleLeft}}</div>
+                <div id="minus" (click)="deletePerson(item)" *ngIf="item.peopleLeft!=0">-</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-forms *ngIf="showForms" (emitTrip)="getMyOutput($event)" (close)="closeForms($event)"></app-forms>

@@ -1,0 +1,33 @@
+<h3>Wybierz marke</h3>
+<select [(ngModel)]="selectedBrand" (ngModelChange)="chosenBrand()">
+  <ng-container *ngIf="showBrands">
+      <option disabled selected></option>
+    <option *ngFor="let brand of jsonData | keyvalue">
+      {{ brand.key }}
+    </option>
+  </ng-container>
+</select>
+
+<h3 *ngIf="showModels">Wybierz model</h3>
+<select *ngIf="showModels" [(ngModel)]="selectedModel" (ngModelChange)="chosenModel()">
+  <ng-container *ngIf="showModels">
+      <option disabled selected></option>
+    <option *ngFor="let model of jsonData[selectedBrand] | keyvalue">
+      {{ model.key }}
+    </option>
+  </ng-container>
+</select>
+
+
+<h3 *ngIf="showColors">Wybierz kolor</h3>
+<ng-container *ngIf="showColors">
+    <div id="mother">
+        <div (click)="choseColor(color)" *ngFor="let color of jsonData[selectedBrand][selectedModel].colors" [ngStyle]="{'background-color': color}"> 
+        </div>
+    </div>
+  </ng-container>
+
+  <div *ngIf="showCar">
+    <h1>{{selectedBrand + " " + selectedModel + " " + chosenColor}}</h1>
+    <p>{{jsonData[selectedBrand][selectedModel].description}}</p>
+  </div>

@@ -1,0 +1,13 @@
+#mother{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#mother > div{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+}

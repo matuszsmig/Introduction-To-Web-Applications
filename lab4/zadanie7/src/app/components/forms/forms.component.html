@@ -1,0 +1,43 @@
+<div class="myForm">
+    <form [formGroup]="newForm" (ngSubmit)="onSubmit(newForm)" >
+        <label>Podaj adres zdjęcia poglądowego:</label>
+        <br>
+        <input type="text" name="image" placeholder="Url zdjęcia" formControlName="image">
+        <br>
+        <label>Podaj tytuł wycieczki:</label>
+        <br>
+        <input type="text" name="title" placeholder="Tytuł" formControlName="title">
+        <br>
+        <label>Podaj kraj wycieczki:</label>
+        <br>
+        <input type="text" name="country" placeholder="Kraj" formControlName="country">
+        <br>
+        <label>Podaj datę rozpoczęcia wycieczki:</label>
+        <br>
+        <input type="date" name="begins" placeholder="Data rozpoczęcia" formControlName="begins">
+        <br>
+        <label>Podaj datę końca wycieczki:</label>
+        <br>
+        <input type="date" name="ends" placeholder="Data końca" formControlName="ends">
+        <br>
+        <label>Podaj koszt całej wycieczki:</label>
+        <br>
+        <input type="number" name="price" placeholder="Cena" formControlName="price">
+        <br>
+        <label>Podaj liczbę miejsc:</label>
+        <br>
+        <input type="number" name="amount" placeholder="Miejsca" formControlName="amount">
+        <br>
+        <label>Podaj krótki opis wycieczki:</label>
+        <br>
+        <input type="text" name="description" placeholder="Opis" formControlName="description">
+        <br>
+        <p [ngClass]="{'warning': validationNotDone==true}" *ngIf="validationNotDone" >Nie poprawne dane!</p>
+        <button type="submit">Zatwierdź</button>
+
+        <span class="material-symbols-outlined thisX" (click)="pressedX()">
+            close
+        </span>
+    </form>
+    
+</div>

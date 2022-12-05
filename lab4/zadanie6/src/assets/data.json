@@ -1,0 +1,20 @@
+{
+    "topics": [
+        {
+            "title":"The Basics",
+            "short": "Core Angular basics you have to know",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim rhoncus felis, in volutpat risus tincidunt vel. Phasellus id eleifend mi, in interdum libero."
+        },
+        {
+            "title":"Components",
+            "short": "Components are a core concept for building Angular UIs and apps",
+            "long": "Aliquam vel mauris a urna malesuada ullamcorper. Vivamus sollicitudin orci mi, fermentum ultrices nisi blandit ut. Morbi laoreet ante lorem."
+        },
+        {
+            "title":"Events",
+            "short": "Events are important in Angular",
+            "long": "Donec nec metus malesuada, sodales nulla et, consequat est. Fusce eget lacus sit amet est ullamcorper rutrum at sed ante. Donec mauris tortor, suscipit id felis sed, cursus vestibulum diam. Ut felis ante, tincidunt sed semper quis, laoreet vitae ligula."
+        }
+    ]
+    
+}

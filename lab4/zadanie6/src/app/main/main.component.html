@@ -1,0 +1,10 @@
+<div class="motherDiv">
+    <h1>Wybierz temat</h1>
+    <div class="big">
+        <div *ngFor="let item of displays.topics; index as i" >
+            <h3>{{item.title}}</h3>
+            <p>{{item.short}}</p>
+            <button (click)="learnMore(i)">Learn More</button>
+        </div>
+    </div>
+</div>

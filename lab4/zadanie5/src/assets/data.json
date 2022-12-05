@@ -1,0 +1,45 @@
+{
+        "audi":{
+            "a3": {
+                "colors": ["white", "black", "gray", "blue"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, risus ut facilisis sodales, tellus tellus venenatis ante, ullamcorper imperdiet risus"
+            },
+            "a7": {
+                "colors": ["white", "black", "gray"],
+                "description": "nisi sed lacus. Pellentesque tincidunt sodales nibh vel tempus. C"
+            },
+            "q5": {
+                "colors": ["white", "black", "red", "blue"],
+                "description": "Curabitur sodales ornare risus vel porta. Curabitur ac mauris sit amet neque ultrices placerat. Nullam placerat, augue quis suscipit lacinia,"
+            },
+            "q7": {
+                "colors": ["green", "red", "gray", "blue"],
+                "description": "erat est cursus sapien, sit amet ullamcorper mauris nisi sed nisi. Aliquam erat volutpat. Phasellus enim nisl, feugiat ut dictum sit amet, sagittis ut es"
+        }
+        },
+        "opel":{
+            "zafira": {
+                "colors": ["red", "orange", "blue"],
+                "description": "Nunc pretium quam sed lacus tristique, nec blandit mauris pulvinar. Sed a est ut diam convallis bla"
+            },
+            "astra": {
+                "colors": ["white", "gray"],
+                "description": "Maecenas pretium, enim eget rutrum hendrerit"
+            },
+            "corsea": {
+                "colors": ["blue", "black", "red"],
+                "description": "est turpis rhoncus lacus, a tristique diam lorem at enim. "
+            }
+        },
+        "toyota":{
+            "yaris": {
+                "colors": ["red", "blue"],
+                "description": "roin iaculis, lorem ut malesuada pharetra, massa diam lacin"
+            },
+            "corolla": {
+                "colors": ["white", "black"],
+                "description": "lacinia nunc, eget elementum lectus dolor eget sapien."
+            }
+        
+    }
+}

@@ -1,0 +1,16 @@
+.fa-star{
+    font-size: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 0px;
+    color: gray;
+    cursor: pointer;
+}
+
+.golden{
+    color: gold;
+}
+
+.rated{
+    color: gold;
+}
