@@ -1,0 +1,54 @@
+form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+label{
+    padding: 10px;
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    color: red;
+}
+
+input{
+    font-size: 18px;
+    padding: 20px;
+    overflow-wrap: break-word;
+}
+
+.nick{
+    width: 40%;
+}
+
+.opinion{
+    height: auto;
+}
+
+.date{
+    width: 25%;
+}
+
+button{
+    width: 25%;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .nick{
+        width: 90%;
+    }
+    .date{
+        width: 35%;
+    }
+    
+}

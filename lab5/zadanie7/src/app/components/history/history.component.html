@@ -1,0 +1,30 @@
+
+<div class="filtr">
+    <div>Wybierz kryterium</div>
+    <select (change) = "updatePageSize($any($event.target).value)">
+        <option *ngFor="let option of myOptions">
+            {{ option }}
+        </option>
+    </select>
+</div>
+
+
+<div *ngFor="let Trip of myData" >
+    <div *ngIf="Trip.bought > 0 && (Trip.status == selected || isSelected == true)" class="info">
+        <h3>Data nabycia: </h3>
+        <h4>{{now}}</h4>
+        <h3>Cena: </h3>
+        <h4>{{Trip.price | currency : 'USD' : 'symbol-narrow'}}</h4>
+        <h3>Data startu: </h3>
+        <h4>{{Trip.begins}}</h4>
+        <h3>Data zakończenia: </h3>
+        <h4>{{Trip.ends}}</h4>
+        <h3>Lokalizacja: </h3>
+        <h4>{{Trip.country}}</h4>
+        <h3>Ilość miejsc: </h3>
+        <h4>{{Trip.bought}}</h4>
+        <h3>Status: </h3>
+        <h4>{{Trip.status}}</h4>
+
+    </div>
+</div>

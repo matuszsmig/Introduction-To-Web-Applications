@@ -1,0 +1,46 @@
+<div *ngFor="let item of myData; index as i">
+    <div class="oneTrip" *ngIf="item.id == idOfTravel">
+
+        <h2><a routerLink="/oferty">Powrót</a></h2>
+
+        <div class="photoselect">
+            <span class="arrow" (click)="nextphoto()"><</span>
+                <img src={{item.image[startId%2]}}>
+            <span class="arrow" (click)="nextphoto()">></span>
+        </div>
+
+        <h2>{{item.title | uppercase}}</h2>
+        <h4>{{item.country | uppercase}}</h4>
+        <h4>{{item.begins}}</h4>
+        <h4>{{item.ends}}</h4>
+        <p>{{item.description}}</p>
+        
+        <app-stars (przeslij)="getSignal($event)"></app-stars> 
+        <p>{{item.stars +1}}</p>
+
+        <div id="bottom">
+            <div id="price">
+                {{item.price | currency : 'USD' : 'symbol-narrow'}}
+            </div>
+            
+            <div id="communicate"> </div>
+            <div id="amountLeft">
+                <div id="plus" (click)="addPerson(item)" *ngIf="item.amount - item.peopleLeft !=0">+</div>
+                <div>{{item.amount - item.peopleLeft}}</div>
+                <div id="minus" (click)="deletePerson(item)" *ngIf="item.peopleLeft!=0">-</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-opionion-forms (emitOpinion)="getOpinion($event)"></app-opionion-forms>
+<br>
+<br>
+<div *ngFor="let opinion of myOpinions; index as i" class="singleOpinion">
+    <div class="nick">{{opinion.nick}}</div>
+    <div class="title">{{opinion.title}}</div>
+    <div class="opinion">{{opinion.opinion}}</div>
+    <div *ngIf="opinion.begins != null" class="date">{{opinion.begins}}</div>
+</div>
+<router-outlet></router-outlet>

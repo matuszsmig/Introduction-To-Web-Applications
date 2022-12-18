@@ -1,0 +1,21 @@
+<nav class="container">
+    <a [routerLink]="'witaj'" class="div1">
+        BPKapitol
+    </a>
+    <div class="div2">
+        <a [routerLink]="'oferty'">Nasze oferty</a>
+        <a [routerLink]="'dodaj'">Dodaj wycieczkę</a>
+        <a [routerLink]="'koszyk'">Mój koszyk {{singleTripMain}} {{pickedMain}}</a>
+        <a [routerLink]="'historia'">Historia zakupów</a>
+        <div *ngIf="info==true" class="redOne">
+            Nadciąga: {{remember}}
+        </div>
+    </div>
+    <div class="div3">
+        <div>
+            Witaj Jarek123!
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

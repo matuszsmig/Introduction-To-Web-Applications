@@ -1,0 +1,17 @@
+<div class="myForm">
+    <form [formGroup]="newForm" (ngSubmit)="onSubmit(newForm)" >
+        <label>Podaj Nazwę Użytkownika:</label>
+        <input type="text" name="nick" placeholder="Nick" formControlName="nick" class="nick">
+        <p *ngIf="newForm.get('nick')?.errors && newForm.get('nick')?.touched">Nie poprawna nazwa użytkownika</p>
+        <label>Podaj tytuł wycieczki:</label>
+        <input type="text" name="title" placeholder="Tytuł" formControlName="title">
+        <p *ngIf="newForm.get('title')?.errors && newForm.get('title')?.touched">Nie poprawna nazwa wycieczki</p>
+        <label>Twoja opinia</label>
+        <input type="text" name="opinion" placeholder="Opinia" formControlName="opinion" class="opinion">
+        <p *ngIf="newForm.get('opinion')?.errors && newForm.get('opinion')?.touched">Nie poprawna opinia</p>
+        <label>Podaj datę wykorzystania wycieczki:</label>
+        <input type="date" name="begins" placeholder="Data" formControlName="begins" class="date">
+        <br>
+        <button type="submit">Zatwierdź</button>
+    </form>
+</div>

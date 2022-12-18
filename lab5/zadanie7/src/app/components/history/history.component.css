@@ -1,0 +1,38 @@
+.conteiner{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+h4{
+    padding: 10px;
+    color: gray;
+}
+
+.filtr{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtr > div {
+    padding: 20px;
+}

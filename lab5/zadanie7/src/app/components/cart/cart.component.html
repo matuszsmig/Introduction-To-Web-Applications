@@ -1,0 +1,12 @@
+<div class="cart">
+    <div>
+        <div *ngFor="let Trip of myData; index as i">
+            <p *ngIf="Trip.peopleLeft > 0">
+                {{Trip.peopleLeft}}x {{Trip.title}}
+            </p>
+        </div>
+        <h1>{{fullSum | currency : 'USD' : 'symbol-narrow'}}</h1>
+    </div>
+
+    <button (click)="buy()" class="buy" *ngIf="fullSum!=0">Kup teraz</button>
+</div>
