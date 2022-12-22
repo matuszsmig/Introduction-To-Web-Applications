@@ -83,7 +83,7 @@ export class FormsComponent {
         amount: parseInt(form.value.amount),
         peopleLeft: 0,
         description: form.value.description,
-        image: form.value.image,
+        image: [form.value.image,form.value.image],
         stars: 0,
         bought: 0,
         status: ""

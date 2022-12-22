@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wdai-1497b": {
+      "hosting": {
+        "zadanie7": [
+          "wdai-1497b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wdai-1497b"
+  }
+}

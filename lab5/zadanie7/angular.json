@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "zadanie7:build:production",
+            "firebaseProject": "wdai-1497b",
+            "firebaseHostingSite": "wdai-1497b"
+          }
         }
       }
     }
